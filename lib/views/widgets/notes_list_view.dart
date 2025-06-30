@@ -8,6 +8,7 @@ class NotesListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 10,
+      padding: EdgeInsets.only(top: 20),
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) => NoteItem(),
     );
