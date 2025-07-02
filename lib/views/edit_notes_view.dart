@@ -7,11 +7,17 @@ class EditNotesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CustomAppBar(text: 'Edit Notes', icon: Icons.check),
-        CustomTextField(hint: 'Edit Notes', maxLines: 8),
-      ],
+    return Scaffold(
+      body: Column(
+        children: [
+          SizedBox(height: 50),
+          CustomAppBar(text: 'Edit Notes', icon: Icons.check),
+          SizedBox(height: 40),
+          CustomTextField(hint: 'Notes'),
+          SizedBox(height: 50),
+          CustomTextField(hint: 'Content', maxLines: 8),
+        ],
+      ),
     );
   }
 }
